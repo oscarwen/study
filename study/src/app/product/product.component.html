@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let product of products" class="col-sm-4 col-md-4 col-lg-4">
+      <div class="card">
+        <img class="card-img-top" src="http://placehold.it/300X150">
+        <div class="card-body">
+          <p class="card-text">{{product.price}}元</p>
+          <p class="card-title"><a>{{product.title}}</a></p>
+          <p>{{product.desc}}</p>
+        </div>
+        <div>
+          <app-stars></app-stars>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
