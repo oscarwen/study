@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = 'my-app';
+
+  test() {
+    // @ts-ignore
+    $('h2').toast('show');
+  }
 }
